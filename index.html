@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">;
     <title>Document</title>
 </head>
 <body>
+    <div class="board"></div>
     <script>
-        
+        let board = document.querySelector(".board");
+        for(let i = 0; i < 16; i++){
+            let rowdiv = document.createElement("div");
+            rowdiv.className = "row";
+            for(let j = 0; j < 16; j++){
+                let columndiv = document.createElement("div");
+                columndiv.className = "col";
+                rowdiv.appendChild(columndiv);
+            }
+            board.appendChild(rowdiv);
+        }
+
+        board.addEventListener("mouseover", (event) => {
+            target = event.target;
+            console.log(target);
+            target.style.background = "black";
+        })        
+
     </script>
 </body>
 </html>

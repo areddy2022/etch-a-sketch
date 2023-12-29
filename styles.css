@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.board{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: auto;
+}
+
+.col{
+    display: flex;
+    align-self: center;
+    flex: auto;
+    height: 100%;
+}
