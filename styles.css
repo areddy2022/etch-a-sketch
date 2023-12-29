@@ -3,14 +3,20 @@ body{
     justify-content: center;
 }
 
+button {
+    font-size: 8px;
+    margin: 0 20px;
+    color: #666;
+}
+
 .board{
-    border: 1px solid black;
+    border: 0.5px solid black;
     display: flex;
     flex-direction: column;
-    min-width: 500px;
-    min-height: 500px;
-    max-width: 500px;
-    max-height: 500px;
+    min-width: 960px;
+    min-height: 960px;
+    max-width: 960px;
+    max-height: 960px;
 }
 
 .row{
